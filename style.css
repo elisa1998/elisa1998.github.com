@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Cormorant";
+  src: url("https://res.cloudinary.com/dcz2dpatz/raw/upload/v1612451968/portafolio/Cormorant-Medium_k6waa7.ttf")
+    format("truetype");
+}
+
+body {
+  font-family: "Cormorant", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant", serif;
+}
