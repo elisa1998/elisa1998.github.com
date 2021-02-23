@@ -1,11 +1,20 @@
 @font-face {
-  font-family: "Cormorant";
-  src: url("https://res.cloudinary.com/dcz2dpatz/raw/upload/v1612451968/portafolio/Cormorant-Medium_k6waa7.ttf")
-    format("truetype");
+  font-family: "lightitalic";
+  src: url("https://res.cloudinary.com/dcz2dpatz/raw/upload/v1613664828/portafolio/Cormorant-LightItalic_d7poiu.ttf")
+    format("woff2");
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "GothamBook";
+  src: url("./font/GothamBook.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
 }
 
 body {
-  font-family: "Cormorant", serif;
+  font-family: "GothamBook";
 }
 h1,
 h2,
@@ -13,5 +22,25 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Cormorant", serif;
+  font-family: "lightitalic";
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* Componentes */
+.layout {
+  background: black;
+  color: white;
+  height: 100vh;
+}
+.titulo {
+  font-size: 170px;
+  line-height: 1;
+}
+.nav {
+  height: 147px;
+  width: 147px;
+  background: #0000ff;
+  border-radius: 50%;
+  margin: 0 0 0 auto;
 }
