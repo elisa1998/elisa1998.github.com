@@ -8,8 +8,9 @@
 }
 
 @font-face {
-  font-family: "GothamBook";
-  src: url("./font/GothamBook.woff2") format("woff2");
+  font-family: "Light";
+  src: url("https://res.cloudinary.com/dcz2dpatz/raw/upload/v1615473092/portafolio/Cormorant-Light_bwnzvx.ttf")
+    format("woff2");
   font-style: normal;
   font-weight: 400;
 }
@@ -17,15 +18,11 @@
 /* Variables */
 /*
 :root {
-  --primario: #38e925;
-  --primario-claro: #a2f598;
-  --primario-fuerte: #279e19;
-  --secundario: #161917;
-  --secundario-claro: #b2b3b2;
-  --secundario-fuerte: #000000;
+  --primario: #0000ff;
+  --secundario: #000000;
   --bg: #ffffff;
   --font-family-light: lightitalic";
-  --font-family--bold: "GothamBook";
+  --font-family--light: "Light";
   --font-size: 17px;
   --h1: 96px;
   --h2: 67px;
@@ -80,7 +77,7 @@ a {
 }
 
 body {
-  font-family: "GothamBook";
+  font-family: "Light";
 }
 h1,
 h2,
@@ -118,6 +115,13 @@ h6 {
   border-radius: 50%;
   margin: 0 0 0 auto;
 }
+
+.aboutme {
+  padding-left: 50px;
+  font-size: 20px;
+}
+
+
 
 /* Utilities */
 .flex {
