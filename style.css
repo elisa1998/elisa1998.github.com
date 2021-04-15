@@ -16,6 +16,7 @@
 }
 
 /* Variables */
+/*
 :root {
   --primario: #0000ff;
   --secundario: #000000;
@@ -29,7 +30,7 @@
   --h4: 33px;
   --h5: 24px;
   --h6: 17px;
-} 
+} */
 
 /* Base */
 body {
@@ -138,6 +139,27 @@ h6 {
   padding-left: 50px;
 }
 
+.proyectos {
+  background-color: #ffffff;
+  margin-top: 300px;
+}
+.proyectos-titulo {
+  color: black;
+}
+.proyectos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 20px;
+  color: black;
+}
+.proyectos-imagen img {
+  width: 400px;
+  height: 400px;
+}
+.proyectos-imagen figcaption {
+  font-size: 20px;
+}
 /* Utilities */
 .flex {
   display: flex;
