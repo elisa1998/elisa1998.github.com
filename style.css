@@ -113,10 +113,10 @@ h6 {
 }
 .nav {
   position: fixed;
-  right: 50px;
-  top: 50px;
-  height: 147px;
-  width: 147px;
+  right: 25px;
+  top: 25px;
+  height: 100px;
+  width: 100px;
   background: #0000ff;
   border-radius: 50%;
 }
@@ -145,21 +145,127 @@ h6 {
 }
 .proyectos-titulo {
   color: black;
+  font-size: 170px;
+  padding-left: 50px;
+  bottom: -200px;
 }
 .proyectos-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-  gap: 20px;
+  gap: 30px;
   color: black;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
 }
 .proyectos-imagen img {
-  width: 400px;
-  height: 400px;
+  width: auto;
+  height: auto;
+  border: 1px solid black;
 }
 .proyectos-imagen figcaption {
-  font-size: 20px;
+  font-size: 15px;
+  border: 1px solid black;
+  font-family: "lightitalic";
+  font-style: italic;
 }
+.carrusel {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+.carrusel .open:checked + figure {
+  position: static;
+  opacity: 100;
+}
+
+.carrusel figure {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+
+.carrusel figure img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.carrusel-nav {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transform: translate(0, -50%);
+  transition: opacity 0.4s linear;
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.carrusel-nav.anterior {
+  left: 0.5ch;
+}
+
+.carrusel-nav.siguiente {
+  right: 0.5ch;
+}
+
+.carrusel-nav:hover {
+  opacity: 0.8;
+}
+
+#uno:checked ~ .uno,
+#dos:checked ~ .dos,
+#tres:checked ~ .tres {
+  display: none;
+}
+
+.carrusel-dots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carrusel-dots li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.dot {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 2rem;
+  transition: opacity 0.4s linear;
+}
+
+.dot:hover {
+  opacity: 0.8;
+}
+
+#uno:checked ~ .uno ~ .carrusel-dots li:nth-child(1) .dot,
+#dos:checked ~ .dos ~ .carrusel-dots li:nth-child(2) .dot,
+#tres:checked ~ .tres ~ .carrusel-dots li:nth-child(3) .dot {
+  color: black;
+}
+
 /* Utilities */
 .flex {
   display: flex;
