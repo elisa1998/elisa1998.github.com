@@ -1,0 +1,3 @@
+En todos los proyectos que puse, no pude hacer el slider porque tienen 4 imagenes. Entonces me gustaría saber como utilizar el codigo que nos enseñaste para 3 imagenes pero en 4.
+En la parte de about me, cuando puse mi texto, se me movio un poco el acomodo y me gustaría saber como arreglarlo. 
+En mi menú, el ciruclo azul, me guatria saber como hacerle para que el piques y se modifique un poco. 
