@@ -93,9 +93,12 @@ ul {
   --h1: 170px;
   line-height: 1;
   display: grid;
-  align-content: end;
   min-height: 100vh; /* Esto hace que se fije al piso del 100vh */
   padding: 0.1em; /* Padding para no dejarlo totalmente pegado */
+}
+
+.titulo h1 {
+  align-self: end;
 }
 
 /* Esto aplica cuando es menor a 600px */
@@ -185,6 +188,14 @@ ul {
 @media screen and (max-width: 600px) {
   .about h2 {
     --h2: 68px;
+  }
+  .about p {
+    margin-left: inherit;
+  }
+
+  .about img {
+    width: 100%;
+    height: auto;
   }
 }
 
