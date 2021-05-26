@@ -12,12 +12,9 @@
   </head>
 
   <body class="layout">
-    <h1 style="min-height: 100vh" class="titulo">
-      ELISA <br />ALVAREZ <br />VALENZUELA
-    </h1>
-    <!-- <div class="circulo"></div> -->
+    <h1 class="titulo">ELISA <br />ALVAREZ <br />VALENZUELA</h1>
     <nav x-data="showInfo()" class="nav">
-      <button x-spread="trigger" class="circulo">
+      <button x-spread="trigger">
         <ul x-spread="info" role="list">
           <li><a href="#">HOME</a></li>
           <li><a href="#">ABOUT ME</a></li>
@@ -26,25 +23,23 @@
         </ul>
       </button>
     </nav>
-    <div class="about">
+    <section class="about">
       <!-- atributos de las imágenes src(de donde jalamos la imagen), alt(texto alternativo que ayuda a describir de que trata la imagen útil para cuando la imagen no se carga), width(ancho de la imagen), height(alto de la imagen), loading(optimizacion para indicar como cargar la imagen, el valor ideal es lazy que indica que cargue el documento lo más pronto posible y al final las imágenes) -->
 
-      <p class="aboutme">
+      <p>
         Hello There!<br />
         My name is Eli, welcome to my work! <br />
         I hope you enojoy it!
       </p>
       <img
-        class="aboutimg"
         src="https://res.cloudinary.com/dcz2dpatz/image/upload/v1614266342/portafolio/Webp.net-gifmaker_xsqsm5.gif"
         alt="elisa"
         width="600"
         height="600"
         loading="lazy"
       />
-      <h2 class="about-titulo absolute">ABOUT ME</h2>
-    </div>
-    <br />
+      <h2>ABOUT ME</h2>
+    </section>
     <section class="proyectos">
       <h2 class="proyectos-titulo">PROJECTS</h2>
       <div class="proyectos-container">
@@ -53,27 +48,30 @@
             src="https://res.cloudinary.com/dcz2dpatz/image/upload/v1616689443/portafolio/PROYECTOS5_vzpzy6.jpg"
             alt="descripcion de imagen"
           />
-          <figcaption>Pillow Thoughts</figcaption>
-          <figcaption>Editorial, Encuadernado</figcaption>
+          <figcaption>
+            <p>Pillow Thoughts</p>
+            <p>Editorial, Encuadernado</p>
+          </figcaption>
         </figure>
         <figure class="proyectos-imagen">
           <img
             src="https://res.cloudinary.com/dcz2dpatz/image/upload/v1616689443/portafolio/PROYECTOS3_j9nqrz.jpg"
             alt="descripcion de imagen"
           />
-          <figcaption>Manual Tipográfico</figcaption>
-          <figcaption>Editorial</figcaption>
+          <figcaption>
+            <p>Manual Tipográfico</p>
+            <p>Editorial</p>
+          </figcaption>
         </figure>
         <figure class="proyectos-imagen">
           <img
             src="https://res.cloudinary.com/dcz2dpatz/image/upload/v1616689444/portafolio/PROYECTOS10_sqjd0q.jpg"
             alt="descripcion de imagen"
           />
-          <figcaption>SpaceX - Kleenex</figcaption>
-          <figcaption>Branding, Packaging</figcaption>
-          <!-- <figcaption>
-      Pagina Web
-    </figcaption> -->
+          <figcaption>
+            <p>SpaceX - Kleenex</p>
+            <p>Branding, Packaging</p>
+          </figcaption>
         </figure>
         <figure class="proyectos-imagen">
           <div class="carrusel">
@@ -88,11 +86,8 @@
             />
             <figure>
               <img
-              src=https://res.cloudinary.com/dcz2dpatz/image/upload/v1616689444/portafolio/PROYECTOS14_gmmzu1.jpg
+                src="https://res.cloudinary.com/dcz2dpatz/image/upload/v1616689444/portafolio/PROYECTOS14_gmmzu1.jpg"
               />
-              <!-- <figcaption>
-      Hola soy el figcaption
-    </figcaption> -->
             </figure>
             <input
               class="open"
@@ -121,12 +116,12 @@
               />
             </figure>
 
-            <label for="tres" class="carrusel-nav anterior uno">‹</label>
+            <!-- <label for="tres" class="carrusel-nav anterior uno">‹</label>
             <label for="dos" class="carrusel-nav siguiente uno">›</label>
             <label for="uno" class="carrusel-nav anterior dos">‹</label>
             <label for="tres" class="carrusel-nav siguiente dos">›</label>
             <label for="dos" class="carrusel-nav anterior tres">‹</label>
-            <label for="uno" class="carrusel-nav siguiente tres">›</label>
+            <label for="uno" class="carrusel-nav siguiente tres">›</label> -->
 
             <ol class="carrusel-dots">
               <li>
@@ -140,16 +135,20 @@
               </li>
             </ol>
           </div>
-          <figcaption>LesGaiCineMad</figcaption>
-          <figcaption>Diseño Página Web</figcaption>
+          <figcaption>
+            <p>LesGaiCineMad</p>
+            <p>Diseño Página Web</p>
+          </figcaption>
         </figure>
-        <figure class="proyectos-imagen">
+        <figure class="proyectos-imagen last">
           <img
             src="https://res.cloudinary.com/dcz2dpatz/image/upload/v1616084593/portafolio/03_rxxbro.jpg"
             alt="descripcion de imagen"
           />
-          <figcaption>Consejo Coordinador Empresarial</figcaption>
-          <figcaption>Branding</figcaption>
+          <figcaption>
+            <p>Consejo Coordinador Empresarial</p>
+            <p>Branding</p>
+          </figcaption>
         </figure>
       </div>
     </section>
