@@ -172,10 +172,11 @@ ul {
 }
 
 .about p {
-  width: 90vw;
-  margin-left: auto;
-  padding: 2em 0 1em;
+  /* width: 90vw; */
+  /* margin-left: auto; */
+  /* padding: 2em 0 1em; */
   font-size: 20px;
+  padding-left: 50px;
 }
 
 .about img {
@@ -185,14 +186,20 @@ ul {
 .about h2 {
   --h2: 170px;
   width: 90vw;
-
+  padding-left: 50px;
   --h1: 170px;
-  line-height: 1;
+  /* line-height: 0; */
   display: grid;
   font-style: italic;
-  min-height: 100vh; /* Esto hace que se fije al piso del 100vh */
+  height: auto; /* Esto hace que se fije al piso del 100vh */
   /*padding: 0.1em; /* Padding para no dejarlo totalmente pegado */
-  padding-left: 50px;
+}
+
+.about div {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -362,6 +369,20 @@ ul {
   color: var(--secundario);
 }
 
+/* Ejemplo carrusel 2 */
+#unoa:checked ~ .unoa,
+#dosa:checked ~ .dosa,
+#tresa:checked ~ .tresa {
+  display: none;
+}
+
+#unoa:checked ~ .unoa ~ .carrusel-dots li:nth-child(1) .dot,
+#dosa:checked ~ .dosa ~ .carrusel-dots li:nth-child(2) .dot,
+#tresa:checked ~ .tresa ~ .carrusel-dots li:nth-child(3) .dot {
+  color: var(--secundario);
+}
+
+/* Contacto */
 .contacto {
   background-color: black;
   padding-left: 50px;
@@ -377,6 +398,13 @@ ul {
   font-size: 20px;
   padding-bottom: 60px;
 }
+
+@media screen and (max-width: 600px) {
+  #contact h3 {
+    font-size: 68px;
+  }
+}
+
 /* Utilities */
 .flex {
   display: flex;
