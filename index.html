@@ -18,41 +18,100 @@
     <nav x-data="showInfo()" class="nav">
       <button x-spread="trigger">
         <ul x-spread="info" role="list">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT ME</a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="/#home">HOME</a></li>
+          <li><a href="/#about">ABOUT ME</a></li>
+          <li><a href="/#projects">PROJECTS</a></li>
+          <li><a href="/#contact">CONTACT</a></li>
         </ul>
       </button>
     </nav>
-    <section class="about">
+    <section id="home" class="about">
       <!-- atributos de las imágenes src(de donde jalamos la imagen), alt(texto alternativo que ayuda a describir de que trata la imagen útil para cuando la imagen no se carga), width(ancho de la imagen), height(alto de la imagen), loading(optimizacion para indicar como cargar la imagen, el valor ideal es lazy que indica que cargue el documento lo más pronto posible y al final las imágenes) -->
 
-      <p>
-        Hello There!<br />
-        My name is Eli, welcome to my work! <br />
-        I hope you enojoy it!
-      </p>
-      <img
-        src="https://res.cloudinary.com/dcz2dpatz/image/upload/v1614266342/portafolio/Webp.net-gifmaker_xsqsm5.gif"
-        alt="elisa"
-        width="600"
-        height="600"
-        loading="lazy"
-      />
+      <div>
+        <p>
+          Hello There!<br />
+          My name is Eli, welcome to my work! <br />
+          I hope you enjoy it!
+        </p>
+        <img
+          src="https://res.cloudinary.com/dcz2dpatz/image/upload/v1614266342/portafolio/Webp.net-gifmaker_xsqsm5.gif"
+          alt="elisa"
+          width="600"
+          height="600"
+          loading="lazy"
+        />
+      </div>
       <h2>ABOUT ME</h2>
     </section>
     <section class="proyectos">
       <h2 class="proyectos-titulo">PROJECTS</h2>
       <div class="proyectos-container">
         <figure class="proyectos-imagen">
-          <img
-            src="https://res.cloudinary.com/dcz2dpatz/image/upload/v1616689443/portafolio/PROYECTOS5_vzpzy6.jpg"
-            alt="descripcion de imagen"
-          />
+          <div class="carrusel">
+            <input
+              class="open"
+              type="radio"
+              id="unoa"
+              name="carrusel"
+              aria-hidden="true"
+              hidden=""
+              checked="checked"
+            />
+            <figure>
+              <img
+                src="https://res.cloudinary.com/dcz2dpatz/image/upload/v1616689444/portafolio/PROYECTOS6_evox4y.jpg"
+              />
+            </figure>
+            <input
+              class="open"
+              type="radio"
+              id="dosa"
+              name="carrusel"
+              aria-hidden="true"
+              hidden=""
+            />
+            <figure>
+              <img
+                src="https://res.cloudinary.com/dcz2dpatz/image/upload/v1616689444/portafolio/PROYECTOS8_jmmcc1.jpg"
+              />
+            </figure>
+            <input
+              class="open"
+              type="radio"
+              id="tresa"
+              name="carrusel"
+              aria-hidden="true"
+              hidden=""
+            />
+            <figure>
+              <img
+                src="https://res.cloudinary.com/dcz2dpatz/image/upload/v1616689444/portafolio/PROYECTOS7_nkbfkn.jpg"
+              />
+            </figure>
+
+            <!-- <label for="tres" class="carrusel-nav anterior uno">‹</label>
+            <label for="dos" class="carrusel-nav siguiente uno">›</label>
+            <label for="uno" class="carrusel-nav anterior dos">‹</label>
+            <label for="tres" class="carrusel-nav siguiente dos">›</label>
+            <label for="dos" class="carrusel-nav anterior tres">‹</label>
+            <label for="uno" class="carrusel-nav siguiente tres">›</label> -->
+
+            <ol class="carrusel-dots">
+              <li>
+                <label for="unoa" class="dot">•</label>
+              </li>
+              <li>
+                <label for="dosa" class="dot">•</label>
+              </li>
+              <li>
+                <label for="tresa" class="dot">•</label>
+              </li>
+            </ol>
+          </div>
           <figcaption>
             <p>Pillow Thoughts</p>
-            <p>Editorial, Encuadernado</p>
+            <p>Editorial, Encuadernación</p>
           </figcaption>
         </figure>
         <figure class="proyectos-imagen">
@@ -175,7 +234,7 @@
         </figure>
       </div>
 
-      <div>
+      <div id="contact">
         <h3 class="contacto">CONTACT</h3>
         <p class="info">ealvarezv@centro.edu.mx</p>
       </div>
