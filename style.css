@@ -238,6 +238,7 @@ ul {
   color: var(--secundario);
   width: calc(100% - var(--padding-helper) * 2);
   margin: auto;
+  padding-bottom: 60px;
 }
 
 .proyectos-imagen {
@@ -394,7 +395,9 @@ ul {
 
 .info {
   background-color: black;
-  justify-content: center;
+  padding-left: 70px;
+  margin: auto 0 0 0;
+  font-style: italic;
   font-size: 20px;
   padding-bottom: 60px;
 }
