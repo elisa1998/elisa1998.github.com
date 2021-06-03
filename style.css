@@ -38,7 +38,10 @@ body {
   font-weight: 400;
 }
 
-h1,
+h1 {
+  font-family: var(--ff-light);
+  font-weight: 300;
+}
 h2,
 h3,
 h4,
